@@ -121,7 +121,7 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 
 /* Add image and change bg color */
 .title-slide {
-  background-image: url(https://github.com/gommora/WICslides/raw/master/libs/img/logo/wic.PNG), url(https://github.com/gommora/WICslides/raw/master/libs/img/logo/logoiiasa.png);
+  background-image: url(https://github.com/gommora/WICslides/raw/master/libs/figures/wic.PNG), url(https://github.com/gommora/WICslides/raw/master/libs/figures/logoiiasa.png);
   background-position: 9% 15%, 70% 15%;
   background-size: 400px;
   background-color: #fff;
