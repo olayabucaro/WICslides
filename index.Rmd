@@ -1,8 +1,8 @@
 ---
 title: "Xaringan example"
 subtitle: "WIC template"
-author: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna)"
-date: "`r Sys.Date()` <hr>"
+author: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna) <hr>"
+date: "`r Sys.Date()` "
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -12,14 +12,14 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
-    includes:
-      in_header: "./libs/partials/header.html"
-      
 ---
 
-# Standard slide with R code
+exclude:true 
+<!--- Slide hidden from presentation --->
 
+<!--- Code chunk for references setup --->
 ```{r, load_refs, include=FALSE, cache=FALSE}
+# Load required packages for references
 library(RefManageR)
 BibOptions(check.entries = FALSE,
            bib.style = "numeric",
@@ -27,8 +27,12 @@ BibOptions(check.entries = FALSE,
            style = "markdown",
            hyperlink = FALSE,
            dashed = FALSE)
-litera <- ReadBib("./litera.bib", check = FALSE)
+litera <- ReadBib("./litera.bib", check = FALSE) #change to your own .bib file
 ```
+
+---
+
+#Standard slide with R code
 
 ```{r, fig.height=4.5, fig.width=12, fig.retina=2, fig.align='center', message=FALSE, warning=FALSE}
 library(tidyverse)
