@@ -1,5 +1,5 @@
 ---
-title: "Xaringan example"
+title: "Very long example title that is longer than two lines <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>, then what happens?"
 subtitle: "WIC template"
 author: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna) <hr>"
 date: "`r Sys.Date()` "
@@ -19,8 +19,9 @@ exclude:true
 
 <!--- Code chunk for references setup --->
 ```{r, load_refs, include=FALSE, cache=FALSE}
+# Required packages (xaringan,shiny)
 # Load required packages for references
-library(RefManageR)
+library(RefManageR) #also package "bibtex" required
 BibOptions(check.entries = FALSE,
            bib.style = "numeric",
            cite.style = "authoryear",

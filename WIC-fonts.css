@@ -1,14 +1,11 @@
-/* Add maven for code font (keep other xaringan defaults) */
-@import url(https://fonts.googleapis.com/css?family=Inconsolata);
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+/* Only Arial (for now? change? add more?)*/
 
-body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', 'Microsoft YaHei', 'Songti SC', serif; }
+body { font-family: Arial}
 h1, h2, h3 {
   font-family: 'Arial';
   font-weight: normal;
 }
 
+/* AFont and color for code highlighting */
 .remark-code, .remark-inline-code { font-family: 'Inconsolata', monospace; }
 .remark-code-line-highlighted     { background-color: #ffff88; }

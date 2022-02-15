@@ -54,7 +54,7 @@
   font-size: 35px;
   text-align: left;
   text-shadow: none;
-  padding-top: 0px;
+  padding-top: 10px;
   margin-top: 0px;
 }
 
@@ -75,12 +75,6 @@
   text-shadow: none;
 }
 
-/* Package defaults that we slightly tweak */
-
-a, a > code {
-  color: #cc0033; /* rgb(249, 38, 114) */
-  text-decoration: none;
-}
 
 /*~~~~~~~~~~~~~~*/
 /* Additions */
@@ -230,73 +224,16 @@ thead, tfoot, tr:nth-child(even) { background: none; }
   padding-left: 100px;  /* delete this for 4:3 aspect ratio */
 }
 
-/* Color adjustments for text */
-
-/* Make bold syntax compile to RU-red */
-strong {
-  color: #2C95D2;
-}
-
-.RUred {
-  color: #2C95D2;
-}
-
-/* Add blue tag */
-.blue {
-  color: #0000CC;
-  font-weight: bold;
-}
-
-/* Add grey tag */
-.grey {
-  color: #515151;
-}
-
-.lightgrey {
-  color: #818181;
-}
-
-/* Force black */
-.black {
-  color: black;
-  font-weight: bold;
-}
-
-/* Add white tag */
-.white {
-  color: white;
-}
-
 /* Color adjustments to headers */
 h1 {
-  color: #2C95D2;
+  color: #2C95D2; /* WIC Blue */
 }
 
 h2 {
-  color: #2C95D2;
+  color: #2C95D2; /* WIC Blue */
 }
-
 
 h3 {
-  color: #2C95D2;
+  color: #2C95D2; /* WIC Blue */
 }
 
-/* Font size tags */
-.big {
-  font-size: 1.5em;
-}
-
-/* ru blockquote */
-ru-blockquote {
-  display: block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-left: solid 10px #cc0033;
-  background-color: #818181;
-  padding: 1em;
-  color: #fff;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-}
