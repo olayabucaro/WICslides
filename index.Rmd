@@ -1,7 +1,7 @@
 ---
-title: "Very long example title that is longer than two lines <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>, then what happens?"
+title: "Introduction to xaringan a R package to make slides in R"
 subtitle: "WIC template"
-author: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna) <hr>"
+author: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna) <br> IIASA <hr>"
 date: "`r Sys.Date()` "
 output:
   xaringan::moon_reader:
@@ -20,6 +20,7 @@ exclude:true
 <!--- Code chunk for references setup --->
 ```{r, load_refs, include=FALSE, cache=FALSE}
 # Required packages (xaringan,shiny)
+  #install.packages(c("xaringan","shiny","RefManageR","bibtex"))
 # Load required packages for references
 library(RefManageR) #also package "bibtex" required
 BibOptions(check.entries = FALSE,
@@ -33,7 +34,25 @@ litera <- ReadBib("./litera.bib", check = FALSE) #change to your own .bib file
 
 ---
 
-#Standard slide with R code
+# Export slides as PDF
+
+If you have installed Google Chrome or Chromium, you can use the function .remark-inline-code[pagedown::chrome_print()] to print an HTML page to PDF
+
+```{r, eval = FALSE}
+install.packages("pagedown")
+
+pagedown::chrome_print("path/to/your/slides.Rmd")
+
+# or just pass the HTML output file path to chrome_print()
+pagedown::chrome_print("path/to/your/slides.html")
+```
+
+Another alternative is to use [xaringanBuilder](https://github.com/jhelvy/xaringanBuilder)
+
+.footnote[More information on: https://github.com/yihui/xaringan/wiki/Export-Slides-to-PDF]
+---
+
+# Standard slide with R code
 
 ```{r, fig.height=4.5, fig.width=12, fig.retina=2, fig.align='center', message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -44,34 +63,57 @@ geom_smooth(method = 'lm', formula = y ~ poly(x, 2))
 
 ---
 
-## Test
+# Use of classes
+
+To change elements CSS classes can be used that are defined in the WIC.css file .remark-code-line-highlighted[Like this to highlight text] 
+
+---
+
+## Test H2
+
+Some text?
 <center>
 <img src="libs/figures/PopPyramid_SSP2.gif" height="450"></img>
 </center>
 
 ---
 
-### Test
+### Test H3
+
+More text?
 <center>
 <img src="libs/figures/time_series_SSP_tpop_1950_2100.jpg" height="450"></img>
 </center>
 
 ---
 
-## Test
+## Citation
 
+Citation is done with the R package ```RefManageR```
+
+.pull-left[
 - `r Citet(litera, "lutz2017forecasting")`
-- `r Citep(litera, "lutz2017forecasting")`
 - abc
-
-
-1. abc
+- abc
+]
+.pull-right[
+1. `r Citep(litera, "lutz2017forecasting")`
 2. abc
 3. abc
+]
 
+To use a two-column layout using the pull-left[] and pull-right[] classes
 ---
+
 # References
 
 ```{r refs, echo=FALSE, results="asis"}
 PrintBibliography(litera)
 ```
+
+---
+
+class: title-slide-final
+
+# Final slide with slide class .title-slide-final 
+

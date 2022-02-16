@@ -1,18 +1,4 @@
-
 /* CSS for WIC xaringan slides */
-
-/* color tweak */
-.inverse {
-  background-color: #272822;
-  color: #777872;
-  text-shadow: 0 0 20px #333;
-}
-
-/* slightly spacing change */
-.inverse h1, .inverse h2, .inverse h3 {
-  color: #f3f3f3;
-  line-height: 1.0em;
-}
 
 /*~~~~~~~~~~~~~~*/
 /* Title slide  */
@@ -41,7 +27,6 @@
   padding-top: 250px;
   font-weight: normal;
   font-size: 45px;
-  line-height: 0.05;
   text-align: left;
   text-shadow: none;
   padding-bottom: 18px;
@@ -75,12 +60,45 @@
   text-shadow: none;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #2C95D2; /* WIC Blue */
+}
+
+h2 {
+  color: #2C95D2; /* WIC Blue */
+}
+
+h3 {
+  color: #2C95D2; /* WIC Blue */
+}
 
 /*~~~~~~~~~~~~~~*/
 /* Additions */
 /*~~~~~~~~~~~~~~*/
 
-/* slightly lower and bigger than default */
+/* Inline code highlighting */
+.remark-inline-code{
+  background: #F5F5F5;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+/* Important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #FFD3DE !important;
+}
+
+/* Footnote class */
 .footnote {
   position: absolute;
   bottom: 1em;
@@ -88,17 +106,6 @@
   font-size: 95%;
 }
 
-.footnote hr {
-  height: 4px;
-  background-color: #3497D2;
-  border: none;
-}
-
-
-/* important code slightly red */
-.remark-code-line-highlighted {
-  background-color: #FFD3DE !important;
-}
 
 /* Two-column layout (slightly wider for aspect ration) */
 .left-column {
@@ -170,70 +177,20 @@ thead, tfoot, tr:nth-child(even) { background: none; }
 }
 
 /*~~~~~~~~~~~~~~~~~~*/
-/* SECTION DIVIDERS */
-/*~~~~~~~~~~~~~~~~~~*/
-
-/* section divider red */
-.title-slide-section-red {
-  background-color: #cc0033;
-  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
-}
-
-/* section divider red H1 fonts */
-.title-slide-section-red h1, .title-slide-section-red h2, .title-slide-section-red h3, .title-slide-section-red p {
-  color: #fff;
-}
-
-/* section divider grey */
-.title-slide-section-grey {
-  background-color: #515151;
-  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
-}
-
-/* section divider grey H1 fonts */
-.title-slide-section-grey h1, .title-slide-section-grey h2, .title-slide-section-grey h3 {
-  color: #fff;
-}
-
-.title-slide-section-grey p {
-  color: #fff;
-}
-
-/*~~~~~~~~~~~~~~~~~~*/
-/* FINAL SLIDE      */
+/*   FINAL SLIDE    */
 /*~~~~~~~~~~~~~~~~~~*/
 
 .title-slide-final {
-  background-color: #272822;
+  background-color: #2C95D2;
   color: #fff;
   padding-left: 100px;
-  text-shadow: 0 0 20px #333;
+  text-shadow: None;
   text-align: center;
 }
 
 .title-slide-final h1 {
-  color: #cc0033;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 250px;
 }
-
-/*~~~~~~~~~~~~~~~~~~~~*/
-/* Global adjustments */
-/*~~~~~~~~~~~~~~~~~~~~*/
-
-/* Add padding to all slides for 16:9 aspect ratio */
-.remark-slide-content {
-  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
-}
-
-/* Color adjustments to headers */
-h1 {
-  color: #2C95D2; /* WIC Blue */
-}
-
-h2 {
-  color: #2C95D2; /* WIC Blue */
-}
-
-h3 {
-  color: #2C95D2; /* WIC Blue */
-}
-
