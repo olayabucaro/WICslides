@@ -18,7 +18,7 @@ exclude:true
 <!--- Slide hidden from presentation --->
 
 <!--- Code chunk for references setup --->
-```{r, load_refs, include=FALSE, cache=FALSE}
+```{r load_refs, include=FALSE, cache=FALSE}
 # Required packages (xaringan,shiny)
   #install.packages(c("xaringan","shiny","RefManageR","bibtex"))
 # Load required packages for references
@@ -38,7 +38,7 @@ litera <- ReadBib("./litera.bib", check = FALSE) #change to your own .bib file
 
 If you have installed Google Chrome or Chromium, you can use the function .remark-inline-code[pagedown::chrome_print()] to print an HTML page to PDF
 
-```{r, eval = FALSE}
+```{r toPDF, eval = FALSE}
 install.packages("pagedown")
 
 pagedown::chrome_print("path/to/your/slides.Rmd")
@@ -54,7 +54,7 @@ Another alternative is to use [xaringanBuilder](https://github.com/jhelvy/xaring
 
 # Standard slide with R code
 
-```{r, fig.height=4.5, fig.width=12, fig.retina=2, fig.align='center', message=FALSE, warning=FALSE}
+```{r testfig, fig.height=4.5, fig.width=12, fig.retina=2, fig.align='center', message=FALSE, warning=FALSE}
 library(tidyverse)
 ggplot(cars, aes(x = dist, y = speed)) + 
   geom_point() + 
@@ -102,7 +102,7 @@ Citation is done with the R package ```RefManageR```
 3. abc
 ]
 
-To use a two-column layout using the pull-left[] and pull-right[] classes
+For a two-column layout use the pull-left[] and pull-right[] classes
 ---
 
 # References
