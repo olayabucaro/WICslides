@@ -7,8 +7,9 @@
 /* Add title slide images and change background color */
 .title-slide {
   background-image: url(https://github.com/gommora/WICslides/raw/master/libs/figures/wic.PNG),
-  url(https://github.com/gommora/WICslides/raw/master/libs/figures/logoiiasa.png);
-  background-position: 9% 15%, 30% 15%;
+  url(https://github.com/gommora/WICslides/raw/master/libs/figures/logoiiasa.png),
+  url(https://github.com/gommora/WICslides/raw/master/libs/figures/logo-owa.png);
+  background-position: 9% 15%, 30% 15%, 91% 15%;
   background-size: 200px;
   background-color: #2C95D2;
   padding-left: 100px;  /* delete this for 4:3 aspect ratio */

@@ -1,8 +1,8 @@
 ---
-title: "Introduction to xaringan a R package to make slides in R"
-subtitle: "WIC template"
-author: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna) <br> IIASA <hr>"
-date: "`r Sys.Date()` "
+title: "Presentation Title"
+subtitle: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna)"
+author: "The Conference/Workshop/Colloquium"
+date: "`r Sys.Date()`, Place"
 output:
   xaringan::moon_reader:
     lib_dir: libs
