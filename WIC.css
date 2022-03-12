@@ -10,7 +10,7 @@
   url(https://github.com/gommora/WICslides/raw/master/libs/figures/logoiiasa.png);
   background-position: 9% 15%, 30% 15%;
   background-size: 200px;
-  background-color: #fff;
+  background-color: #2C95D2;
   padding-left: 100px;  /* delete this for 4:3 aspect ratio */
 }
 
@@ -23,7 +23,7 @@
 
 /* H1 (title) fonts */
 .title-slide h1 {
-  color: #2C95D2;
+  color: #fff;
   padding-top: 250px;
   font-weight: normal;
   font-size: 45px;
@@ -35,7 +35,7 @@
 
 /* H2 (subtitle) fonts */
 .title-slide h2 {
-  color: #2C95D2;
+  color: #fff;
   font-size: 35px;
   text-align: left;
   text-shadow: none;
@@ -47,7 +47,7 @@
 .title-slide h3 {
   font-size: 28px;
   font-weight: normal;
-  color: #666666;
+  color: #fff;
   text-align: left;
   text-shadow: none;
   padding: 0px;

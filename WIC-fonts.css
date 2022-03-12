@@ -1,8 +1,10 @@
-/* Only Arial (for now? change? add more?)*/
+/* Use Raleway font */
 
-body { font-family: Arial}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body { font-family: Raleway}
 h1, h2, h3 {
-  font-family: 'Arial';
+  font-family: 'Raleway';
   font-weight: normal;
 }
 
