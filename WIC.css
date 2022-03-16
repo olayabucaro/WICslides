@@ -25,18 +25,18 @@
 /* H1 (title) fonts */
 .title-slide h1 {
   color: #fff;
-  padding-top: 250px;
-  font-size: 45px;
+  padding-top: 250px; /* Distance from logos */
+  font-size: 35px;
   text-align: left;
   text-shadow: none;
-  padding-bottom: 18px;
+  padding-bottom: 18px; /* Distance from subtitle */
   margin-bottom: 18px;
 }
 
 /* H2 (subtitle) fonts */
 .title-slide h2 {
   color: #fff;
-  font-size: 35px;
+  font-size: 20px;
   text-align: left;
   text-shadow: none;
   padding-top: 10px;
@@ -45,7 +45,7 @@
 
 /* H3 (other title text) fonts */
 .title-slide h3 {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: normal;
   color: #fff;
   text-align: left;

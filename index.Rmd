@@ -1,6 +1,6 @@
 ---
 title: "Presentation Title line 1 <br> Presentation Title line 2 <br> Presentation Title line 3"
-subtitle: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna)"
+subtitle: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna) <br> First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna) <br> First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna)"
 author: "The Conference/Workshop/Colloquium"
 date: "`r Sys.Date()`, Place"
 output:
