@@ -1,6 +1,18 @@
 /* CSS for WIC xaringan slides */
 
 /*~~~~~~~~~~~~~~*/
+/* Slide settings */
+/*~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+  background-image: url(https://github.com/gommora/WICslides/raw/master/libs/figures/logo_WittgensteinCentre_head.png);
+  background-position: 2% 98%;
+  background-size: 40px;
+}
+
+/*~~~~~~~~~~~~~~*/
 /* Title slide  */
 /*~~~~~~~~~~~~~~*/
 
@@ -58,16 +70,14 @@
 /* Remove slide count */
 .title-slide .remark-slide-number {
   text-shadow: none;
+  color: #2C95D2;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~*/
 /* Global adjustments */
 /*~~~~~~~~~~~~~~~~~~~~*/
 
-/* Add padding to all slides for 16:9 aspect ratio */
-.remark-slide-content {
-  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
-}
+
 
 /* Color adjustments to headers */
 h1 {
