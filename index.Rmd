@@ -1,8 +1,8 @@
 ---
-title: "Presentation Title"
-subtitle: "First Name, Last Name <br> Affiliation,  Wittgenstein Centre (IIASA, OeAW, University of Vienna)"
-author: "The Conference/Workshop/Colloquium"
-date: "`r Sys.Date()`, Location"
+title: "The new WIC Slide Master: a joint effort of colleagues from IIASA, ÖAW and Uni Wien"
+subtitle: "Ingrid Setz, Elisabeth Stella Maria Janisch, Orlando Olaya Bucaro, Miguel Sánchez-Romero, Patrick Lazarevic, and Marc Luy <br> <br> International Institute for Applied Systems Analysis <br> Vienna Institute of Demography <br> Austrian Academy of Sciences University of Vienna"
+author: "Jour Fixe of the Wittgenstein Centre for Demography and Global Human Capital"
+date: "Vienna, 04 April 2022"
 output:
   xaringan::moon_reader:
     lib_dir: libs
