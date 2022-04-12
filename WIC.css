@@ -18,7 +18,7 @@
 
 /* Add title slide images and change background color */
 .title-slide {
-  background-image: url(https://github.com/gommora/WICslides/raw/master/libs/figures/wic.PNG),
+  background-image: url(https://github.com/gommora/WICslides/raw/master/libs/figures/WIClogo.png),
   url(https://github.com/gommora/WICslides/raw/master/libs/figures/logoiiasa.png),
   url(https://github.com/gommora/WICslides/raw/master/libs/figures/logo-owa.png);
   background-position: 9% 15%, 30% 15%, 91% 15%;
