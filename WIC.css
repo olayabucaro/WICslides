@@ -1,35 +1,56 @@
 /* CSS for WIC xaringan slides */
 
-/*~~~~~~~~~~~~~~*/
-/* Slide settings */
-/*~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* Content slide settings */
+/*~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* Add padding to all slides for 16:9 aspect ratio */
+/* Add padding to all slides for 16:9 aspect ratio and WIC head in left corner */
 .remark-slide-content {
-  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
-  background-image: url(https://github.com/gommora/WICslides/raw/master/libs/figures/WIChead.png);
+  padding-left: 90px;  /* delete this for 4:3 aspect ratio */
+  background-image: url(https://github.com/olayabucaro/WICslides/raw/master/libs/figures/WIChead.png);
   background-position: 2% 98%;
   background-size: 40px;
 }
 
-/*~~~~~~~~~~~~~~*/
-/* Title slide  */
-/*~~~~~~~~~~~~~~*/
+/* Header font settings */
+.remark-slide-content h1 {
+  color: #2C95D2; /* WIC blue */
+  font-weight: bold;
+  font-size: 36px;
+}
 
-/* Add title slide images and change background color */
+.remark-slide-content h2 {
+  color: #2C95D2; /* WIC blue */
+  font-size: 28px;
+}
+
+.remark-slide-content h3 {
+  color: #2C95D2; /* WIC blue */
+  font-size: 20px;
+}
+
+/* Body font settings */
+p {
+  color: black;
+  font-size: 18px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+/* Title slide settings */
+/*~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Title slide logo and background color */
 .title-slide {
-  background-image: url(https://github.com/gommora/WICslides/raw/master/libs/figures/WIClogo.png)
- /* , url(https://github.com/gommora/WICslides/raw/master/libs/figures/logoiiasa.png) */
- /* ,url(https://github.com/gommora/WICslides/raw/master/libs/figures/logo-owa.png)*/ ; 
+  background-image: url(https://github.com/olayabucaro/WICslides/raw/master/libs/figures/WIClogo.png);
   background-position: 4% 5%;
   background-size: 300px;
-  background-color: #2C95D2;
+  background-color: #2C95D2; /* WIC blue */
   padding-left: 40px;  /* delete this for 4:3 aspect ratio */
 }
 
-/* H1 (title) fonts */
+/* Title font settings */
 .title-slide h1 {
-  color: #fff;
+  color: white;
   padding-top: 100px;
   font-size: 40px;
   text-align: left;
@@ -39,9 +60,9 @@
   font-weight: bold;
 }
 
-/* H2 (subtitle) fonts */
+/* Subtitle and author font settings */
 .title-slide h2 {
-  color: #fff;
+  color: white;
   font-size: 28px;
   text-align: left;
   text-shadow: none;
@@ -50,44 +71,45 @@
   margin-bottom: 80px;
 }
 
-/* H3 (other title text) fonts */
+/* Date font settings */
 .title-slide h3 {
   font-size: 20px;
   font-weight: normal;
-  color: #fff;
+  color: white;
   text-align: left;
   text-shadow: none;
   margin: 0px;
   line-height: 1;
 }
 
-/* Remove slide count */
+/* Hide slide count from title slide */
 .title-slide .remark-slide-number {
   text-shadow: none;
   color: #2C95D2;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~*/
-/* Global adjustments */
-/*~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*   Final slide settings   */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/* Color adjustments to headers */
-h1 {
-  color: #2C95D2; /* WIC Blue */
-  font-weight: bold;
+.title-slide-final {
+  background-color: #2C95D2; /* WIC blue */
+  padding-left: 100px;
+  text-shadow: None;
+  text-align: center;
+  background-image: url(); /* Empty to remove WIC from final slide*/
 }
 
-h2 {
-  color: #2C95D2; /* WIC Blue */
+.title-slide-final h1 {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  padding-top: 250px;
 }
 
-h3 {
-  color: #2C95D2; /* WIC Blue */
-}
-
-/*~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~*/
 /* Additions */
-/*~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~*/
 
 /* Inline code highlighting */
 .remark-inline-code{
@@ -101,7 +123,7 @@ h3 {
   background-color: #FFD3DE !important;
 }
 
-/* Footnote class */
+/* Footnote settings */
 .footnote {
   position: absolute;
   bottom: 1em;
@@ -109,8 +131,6 @@ h3 {
   font-size: 95%;
 }
 
-
-/* Two-column layout (slightly wider for aspect ration) */
 .left-column {
   color: #777;
   width: 25%;
@@ -122,7 +142,6 @@ h3 {
   color: #000;
 }
 
-/* slightly thiner to suppor aspect ration */
 .right-column {
   width: 70%;
   float: right;
@@ -167,7 +186,6 @@ table {
 table thead th { border-bottom: none; }
 thead, tfoot, tr:nth-child(even) { background: none; }
 
-/* leave this alone */
 @page { margin: 0; }
 @media print {
   .remark-slide-scaler {
@@ -177,24 +195,4 @@ thead, tfoot, tr:nth-child(even) { background: none; }
     top: 0 !important;
     left: 0 !important;
   }
-}
-
-/*~~~~~~~~~~~~~~~~~~*/
-/*   FINAL SLIDE    */
-/*~~~~~~~~~~~~~~~~~~*/
-
-.title-slide-final {
-  background-color: #2C95D2;
-  color: #fff;
-  padding-left: 100px;
-  text-shadow: None;
-  text-align: center;
-  background-image: url();
-}
-
-.title-slide-final h1 {
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 45px;
-  padding-top: 250px;
 }
