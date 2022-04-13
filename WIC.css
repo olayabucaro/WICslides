@@ -189,6 +189,7 @@ thead, tfoot, tr:nth-child(even) { background: none; }
   padding-left: 100px;
   text-shadow: None;
   text-align: center;
+  background-image: url();
 }
 
 .title-slide-final h1 {
