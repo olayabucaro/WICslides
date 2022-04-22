@@ -1,6 +1,6 @@
 /* Use Raleway font */
 
-@import url(https://fonts.googleapis.com/css2?family=Raleway);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;700);
 
 body { font-family: 'Raleway';}
 h1, h2, h3 {
