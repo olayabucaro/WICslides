@@ -1,4 +1,4 @@
-# WIC xaringan
+# WIC xaringan template
 
 Xaringan theme for html presentations using WIC colors
 
