@@ -89,6 +89,7 @@ ul li::before {
   color: white;
   font-size: 1.6em;
   text-align: left;
+  font-weight: normal;
   margin-top: 1em; /* Distance between field lines */
   margin-bottom: 9em;/* Diastance to date field */
 }
@@ -98,6 +99,7 @@ ul li::before {
   font-size: 1em;
   color: white;
   text-align: left;
+  font-weight: normal;
   margin: 0px; /* Marign around each line */
   line-height: 1; /* Line spacing  */
 }
