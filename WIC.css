@@ -16,21 +16,21 @@
 /* Header font settings */
 .remark-slide-content h1 {
   color: #2C95D2; /* WIC blue */
-  font-weight: 500;
+  font-weight: bold;
   font-size: 3.3em;
   text-align: center;
 }
 
 .remark-slide-content h2 {
   color: #2C95D2; /* WIC blue */
-  font-weight: 500;
+  font-weight: bold;
   font-size: 2.3em;
   text-align: center;
 }
 
 .remark-slide-content h3 {
   color: #2C95D2; /* WIC blue */
-  font-weight: 500;
+  font-weight: bold;
   font-size: 1.6em;
   text-align: center;
 }
@@ -79,7 +79,7 @@ ul li::before {
   color: white;
   font-size: 3.3em;
   text-align: left;
-  font-weight: 500;
+  font-weight: bold;
   margin-top: 3em; /* Distance between logo and title */
   margin-bottom: 1em; /* Diastance to subtile field */
 }
