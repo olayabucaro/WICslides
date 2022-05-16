@@ -1,8 +1,8 @@
 ---
-title: "The new WIC Slide Master: a joint effort of colleagues from IIASA, ÖAW and Uni Wien"
-subtitle: "Ingrid Setz, Elisabeth Stella Maria Janisch, Orlando Olaya Bucaro, Miguel Sánchez-Romero, Patrick Lazarevic, and Marc Luy <br> <br> International Institute for Applied Systems Analysis <br> Vienna Institute of Demography <br> Austrian Academy of Sciences University of Vienna"
-author: "Jour Fixe of the Wittgenstein Centre for Demography and Global Human Capital"
-date: "Vienna, 04 April 2022"
+title: "Title of presentation (left or centred)"
+subtitle: "Authors (left or centred) <br> <br> Affiliation(s) (left or centred)"
+author: "Name of conference or event"
+date: "Place, data"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -35,86 +35,8 @@ litera <- ReadBib("./litera.bib", check = FALSE) #change to your own .bib file
 
 ---
 
-# Export slides as PDF
-
-If you have installed Google Chrome or Chromium, you can use the function .remark-inline-code[pagedown::chrome_print()] to print an HTML page to PDF
-
-```{r toPDF, eval = FALSE}
-install.packages("pagedown")
-
-pagedown::chrome_print("path/to/your/slides.Rmd")
-
-# or just pass the HTML output file path to chrome_print()
-pagedown::chrome_print("path/to/your/slides.html")
-```
-
-Another alternative is to use [xaringanBuilder](https://github.com/jhelvy/xaringanBuilder)
-
-.footnote[More information on: https://github.com/yihui/xaringan/wiki/Export-Slides-to-PDF]
----
-
-# Standard slide with R code
-
-```{r testfig, fig.height=4.5, fig.width=12, fig.retina=2, fig.align='center', message=FALSE, warning=FALSE}
-library(ggplot2)
-ggplot(cars, aes(x = dist, y = speed)) + 
-  geom_point() + 
-geom_smooth(method = 'lm', formula = y ~ poly(x, 2))
-```
-
----
-
-# Use of classes
-
-To change elements CSS classes can be used that are defined in the WIC.css file .remark-code-line-highlighted[Like this to highlight text] 
-
----
-
-## Test H2
-
-Some text?
-<center>
-<img src="libs/figures/PopPyramid_SSP2.gif" height="450"></img>
-</center>
-
----
-
-### Test H3
-
-More text?
-<center>
-<img src="libs/figures/time_series_SSP_tpop_1950_2100.jpg" height="450"></img>
-</center>
-
----
-
-# Citation
-
-Citation is done with the R package ```RefManageR```
-
-.pull-left[
-- `r Citet(litera, "lutz2017forecasting")`
-- abc
-- abc
-]
-.pull-right[
-1. `r Citep(litera, "lutz2017forecasting")`
-2. abc
-3. abc
-]
-
-For a two-column layout use the pull-left[] and pull-right[] classes
----
-
-# References
-
-```{r refs, echo=FALSE, results="asis"}
-PrintBibliography(litera)
-```
-
----
-
-class: title-slide-final
-
-# Final slide with slide class .title-slide-final 
-
+## Title of content slide (left or centred)
+- Text Text Text
+- Text Text
+- Text
+- ...
