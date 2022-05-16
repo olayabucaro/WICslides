@@ -2,7 +2,7 @@
 title: "Title of presentation (left or centred)"
 subtitle: "Authors (left or centred) <br> <br> Affiliation(s) (left or centred)"
 author: "Name of conference or event"
-date: "Place, data"
+date: "Place, date"
 output:
   xaringan::moon_reader:
     lib_dir: libs
