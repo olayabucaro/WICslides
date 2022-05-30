@@ -1,8 +1,8 @@
 ---
-title: "Title of presentation (left or centred)"
-subtitle: "Authors (left or centred) <br> <br> Affiliation(s) (left or centred)"
-author: "Name of conference or event"
-date: "Place, date"
+title: "Title of Presentation (left or centred)"
+author: "Authors (left or centred)"
+institute: "Affiliation(s) (left or centred)"
+date: "Name of Conference or Event <br> Place, date"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -35,8 +35,51 @@ litera <- ReadBib("./litera.bib", check = FALSE) #change to your own .bib file
 
 ---
 
-## Title of content slide (left or centred)
+# Example Bullet List
 - Text Text Text
 - Text Text
 - Text
 - ...
+---
+
+# Example Numbered List
+1. Text Text Text
+2. Text Text
+3. Text
+4. ...
+
+---
+
+# Example Code
+
+```{r}
+# Some R code
+x <- rpois(5,10)
+y <- matrix(diag(x),5,5)
+print(y)
+```
+
+
+---
+
+# Example Blockquote
+
+.blockquote[Test]
+
+---
+
+class: title-slide-final
+
+# Closing Slide
+
+- Text Text Text
+- Text Text
+- Text
+- ...
+
+.footnote[
+wittgensteincentre.org <br>
+dataexplorer.wittgensteincentre.org
+]
+
+

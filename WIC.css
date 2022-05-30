@@ -17,7 +17,7 @@
 .remark-slide-content h1 {
   color: #2C95D2; /* WIC blue */
   font-weight: bold;
-  font-size: 3.3em;
+  font-size: 3em;
   text-align: center;
 }
 
@@ -56,10 +56,47 @@ ul li::before {
   color: #2C95D2; /* WIC blue */
   font-weight: bold; /* If you want it to be bold */
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
+  width: 0.7em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
-  font-size: 1.5em;
 }
+
+ol {
+  font-size: 2em;
+}
+
+ol li::marker {
+  color: #2C95D2; /* WIC blue */
+}
+
+/* TEST Number point style
+ol {
+   list-style: none;
+   counter-reset: item;
+   font-size: 2em;
+ }
+
+ ol > li{
+   counter-increment: item;
+   margin-bottom: 5px;
+ }
+
+ol > li:before {
+   margin-right: 10px;
+   content: counter(item);
+   background: #2C95D2;
+   border-radius: 100%;
+   color: white;
+   width: 1.3em;
+   text-align: center;
+   display: inline-block;
+ }
+*/
+
+/* Slide counter */
+    .remark-slide-number {
+        text-shadow: none;
+        color: #D0D0D0;
+    }
 
 /*~~~~~~~~~~~~~~~~~~~~~~*/
 /* Title slide settings */
@@ -75,7 +112,7 @@ ul li::before {
 }
 
 /* Title field: Title font settings */
-.title-slide h1 {
+.title-slide .title h1 {
   color: white;
   font-size: 3.3em;
   text-align: left;
@@ -84,24 +121,44 @@ ul li::before {
   margin-bottom: 1em; /* Diastance to subtile field */
 }
 
-/* Subtitle field: Author and affiliation font settings */
-.title-slide h2 {
+/* Subtitle field*/
+.title-slide .subtitle h2 {
   color: white;
-  font-size: 1.6em;
+  font-size: 2em;
   text-align: left;
   font-weight: 400;
   margin-top: 1em; /* Distance between field lines */
   margin-bottom: 9em;/* Diastance to date field */
 }
 
+/* Author field: Author font settings */
+.title-slide .author h3 {
+  color: white;
+  font-size: 2.2em;
+  text-align: left;
+  font-weight: 400;
+  margin-top: 0.8em; /* Distance between field lines */
+  margin-bottom: 1em;/* Diastance to date field */
+}
+
+/* Institute field: Affiliation font settings */
+.title-slide .institute h3 {
+  color: white;
+  font-size: 1.6em;
+  text-align: left;
+  font-weight: 400;
+  margin-top: 1em; /* Distance between field lines */
+  margin-bottom: 7em;/* Diastance to date field */
+}
+
 /* Date field: Location and date font settings */
-.title-slide h3 {
-  font-size: 1em;
+.title-slide .date h3 {
+  font-size: 1.3em;
   color: white;
   text-align: left;
   font-weight: 400;
   margin: 0px; /* Marign around each line */
-  line-height: 1; /* Line spacing  */
+  line-height: 1.5; /* Line spacing  */
 }
 
 /* Hide slide count from title slide */
@@ -117,27 +174,78 @@ ul li::before {
 .title-slide-final {
   background-color: #2C95D2; /* WIC blue */
   padding-left: 100px;
+  background-size: 75px;
   text-shadow: None;
-  text-align: center;
-  background-image: url(); /* Empty to remove WIC from final slide*/
+  text-align: left;
+  background-image: url(https://raw.githubusercontent.com/olayabucaro/WICslides/master/libs/figures/logo_head_white.png);
 }
 
 .title-slide-final h1 {
   color: white;
   text-align: center;
-  font-size: 2.3em;
-  padding-top: 250px;
+  font-size: 3em;
 }
+
+/* Bullet point style */
+.title-slide-final ul {
+        list-style: none; /* Remove default bullets */ 
+            font-size: 2em;
+            color: white;
+    }
+.title-slide-final ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: white; /* WIC blue */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 0.7em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+/* Footnote settings */
+.title-slide-final .footnote {
+        position: absolute;
+        bottom: 1em;
+        padding-left: 58%;
+        font-size: 95%;
+        text-align: right;
+    }
+    
+.title-slide-final p {
+    color: white;
+    }
 
 /*~~~~~~~~~~~*/
 /* Additions */
 /*~~~~~~~~~~~*/
+
+
+/* blockquote */
+.blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-top: solid 10px #2C95D2;
+  background-color: #EBF6F9;
+  padding: 1em;
+  color: black;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
 
 /* Inline code highlighting */
 .remark-inline-code{
   background: #F5F5F5;
   border-radius: 3px;
   padding: 4px;
+}
+
+.hljs-github .hljs {
+    background: #EBF6F9;
+}
+.hljs-github .hljs-number {
+    color: #2C95D2;
 }
 
 /* Important code slightly red */
