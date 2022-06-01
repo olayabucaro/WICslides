@@ -21,7 +21,7 @@ Source: https://github.com/olayabucaro/WICslides
   color: #2C95D2; /* WIC blue */
   font-weight: bold;
   font-size: 3em;
-  text-align: left; /* Optional: left */
+  text-align: left; /* Optional: center */
 }
 
 .remark-slide-content h2 {
@@ -157,7 +157,7 @@ ol li::marker {
 
 .title-slide-final h1 {
   color: white;
-  text-align: center; /* Optional: left */
+  text-align: left; /* Optional: center */
   font-size: 3em;
 }
 
