@@ -16,7 +16,7 @@ Install the R package Xaringan from CRAN or the latest version using {remotes}.
 remotes::install_github('yihui/xaringan')
 ```
 
-Clone this repo and edit the index.rmd file.
+Clone this repo and edit the index.Rmd file.
 Additional configurations can be done in the wic.css file.
 
 ## Documentation
