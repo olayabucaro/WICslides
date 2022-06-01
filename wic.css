@@ -9,9 +9,9 @@ Source: https://github.com/olayabucaro/WICslides
 
 /* Add padding to all slides for 16:9 aspect ratio and WIC head in left corner */
 .remark-slide-content {
-  padding-left: 90px;  /* delete this for 4:3 aspect ratio */
+  padding-left: 3%;  /* edit this for 4:3 aspect ratio */
   background-image: url(https://github.com/olayabucaro/WICslides/raw/master/libs/figures/WIChead.png);
-  background-position: 2% 97%; /* Postion of bottom WIC head */
+  background-position: 3% 97%; /* Postion of bottom WIC head */
   background-size: 50px; /* Size of bottom WIC head */
   font-size: 16px; /* Base font size, default in most browsers */
 }
@@ -21,7 +21,7 @@ Source: https://github.com/olayabucaro/WICslides
   color: #2C95D2; /* WIC blue */
   font-weight: bold;
   font-size: 3em;
-  text-align: center; /* Optional: left */
+  text-align: left; /* Optional: left */
 }
 
 .remark-slide-content h2 {
@@ -51,6 +51,7 @@ a {
 
 ul{
   font-size: 1.5em;
+  padding-left: 2%;
 }
 
 /* Bullet point style */
@@ -60,6 +61,7 @@ ul li::marker {
 
 ol {
   font-size: 1.5em;
+  padding-left: 2%;
 }
 
 /* Numbered list style */
@@ -145,18 +147,17 @@ ol li::marker {
 
 .title-slide-final {
   background-color: #2C95D2; /* WIC blue */
-  padding-left: 100px;
-  
+  padding-left: 3%;
   text-shadow: None;
   text-align: left;
   background-image: url(https://raw.githubusercontent.com/olayabucaro/WICslides/master/libs/figures/logo_head_white.png);
-  background-position: 2% 97%; /* Postion of bottom WIC head */
+  background-position: 3% 97%; /* Postion of bottom WIC head */
   background-size: 50px;
 }
 
 .title-slide-final h1 {
   color: white;
-  text-align: center;
+  text-align: center; /* Optional: left */
   font-size: 3em;
 }
 
@@ -172,8 +173,8 @@ ol li::marker {
 .title-slide-final .footnote {
         position: absolute;
         bottom: 0.1em;
-        padding-left: 60%; /* 45% for 4:3 ratio */
-        font-size: 90%;
+        padding-left: 66%; /* 45% for 4:3 ratio */
+        font-size: 88%;
         text-align: right;
 }
 

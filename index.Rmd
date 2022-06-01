@@ -35,14 +35,14 @@ litera <- ReadBib("./litera.bib", check = FALSE) #change to your own .bib file
 
 ---
 
-# Example Bullet List
+# Example bullet list
 - Text Text Text
 - Text Text
 - Text
 - ...
 ---
 
-# Example Numbered List
+# Example numbered list
 1. Text Text Text
 2. Text Text
 3. Text
@@ -50,7 +50,7 @@ litera <- ReadBib("./litera.bib", check = FALSE) #change to your own .bib file
 
 ---
 
-# Example Code
+# Example code
 
 ```{r}
 # Some R code
@@ -62,7 +62,7 @@ print(y)
 
 ---
 
-# Example Blockquote
+# Example blockquote
 
 .blockquote[Text]
 
