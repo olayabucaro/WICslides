@@ -1,12 +1,12 @@
 ---
-title: "Title of Presentation (left or centred)"
-author: "Authors (left or centred)"
+title: "Title of presentation (left or centred)"
+author: "Author(s) (left or centred)"
 institute: "Affiliation(s) (left or centred)"
 date: "Name of Conference or Event <br> Place, date"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: ["WIC.css", "WIC-fonts.css"]
+    css: ["wic.css", "wic-fonts.css"]
     self_contained: false
     nature:
       highlightStyle: github
@@ -64,13 +64,13 @@ print(y)
 
 # Example Blockquote
 
-.blockquote[Test]
+.blockquote[Text]
 
 ---
 
 class: title-slide-final
 
-# Closing Slide
+# Title of closing slide
 
 - Text Text Text
 - Text Text

@@ -1,15 +1,18 @@
-/* CSS for WIC xaringan slides */
+/*
+Title: Wittgenstein Centre for Demography and Global Human Capital (WIC) Xaringan theme
+Author: Orlando Olaya Bucaro
+Updated: 31/05/2022
+Source: https://github.com/olayabucaro/WICslides
+*/
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* Content slide settings */
-/*~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Add padding to all slides for 16:9 aspect ratio and WIC head in left corner */
 .remark-slide-content {
   padding-left: 90px;  /* delete this for 4:3 aspect ratio */
   background-image: url(https://github.com/olayabucaro/WICslides/raw/master/libs/figures/WIChead.png);
-  background-position: 2% 98%;
-  background-size: 40px;
+  background-position: 2% 97%; /* Postion of bottom WIC head */
+  background-size: 50px; /* Size of bottom WIC head */
   font-size: 16px; /* Base font size, default in most browsers */
 }
 
@@ -18,21 +21,21 @@
   color: #2C95D2; /* WIC blue */
   font-weight: bold;
   font-size: 3em;
-  text-align: center;
+  text-align: center; /* Optional: left */
 }
 
 .remark-slide-content h2 {
   color: #2C95D2; /* WIC blue */
   font-weight: bold;
   font-size: 2.3em;
-  text-align: center;
+  text-align: center; /* Optional: left */
 }
 
 .remark-slide-content h3 {
   color: #2C95D2; /* WIC blue */
   font-weight: bold;
   font-size: 1.6em;
-  text-align: center;
+  text-align: center; /* Optional: left */
 }
 
 /* Body font settings */
@@ -46,67 +49,38 @@ a {
   color: #2C95D2; /* WIC blue */
 }
 
-/* Bullet point style */
-ul {
-  list-style: none; /* Remove default bullets */ 
-  font-size: 2em;
+ul{
+  font-size: 1.5em;
 }
-ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+
+/* Bullet point style */
+ul li::marker {
   color: #2C95D2; /* WIC blue */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 0.7em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 ol {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
+/* Numbered list style */
 ol li::marker {
   color: #2C95D2; /* WIC blue */
 }
 
-/* TEST Number point style
-ol {
-   list-style: none;
-   counter-reset: item;
-   font-size: 2em;
- }
-
- ol > li{
-   counter-increment: item;
-   margin-bottom: 5px;
- }
-
-ol > li:before {
-   margin-right: 10px;
-   content: counter(item);
-   background: #2C95D2;
-   border-radius: 100%;
-   color: white;
-   width: 1.3em;
-   text-align: center;
-   display: inline-block;
- }
-*/
-
 /* Slide counter */
-    .remark-slide-number {
-        text-shadow: none;
-        color: #D0D0D0;
-    }
+.remark-slide-number {
+  text-shadow: none;
+  opacity: 100%; /* Change opacity to 0 to hide counter */
+  color: #D0D0D0; 
+}
 
-/*~~~~~~~~~~~~~~~~~~~~~~*/
 /* Title slide settings */
-/*~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Title slide logo and background color */
 .title-slide {
   background-image: url(https://github.com/olayabucaro/WICslides/raw/master/libs/figures/WIClogo.png);
-  background-position: 4% 6%;
-  background-size: 300px;
+  background-position: 4% 6%; /* Possition of WIC logo */
+  background-size: 300px; /* Size of WIC logo */
   background-color: #2C95D2; /* WIC blue */
   padding-left: 3%; /* Placement of title text, delete this for 4:3 aspect ratio */
 }
@@ -115,40 +89,40 @@ ol > li:before {
 .title-slide .title h1 {
   color: white;
   font-size: 3.3em;
-  text-align: left;
+  text-align: left; /* Optional: center */
   font-weight: bold;
-  margin-top: 3em; /* Distance between logo and title */
-  margin-bottom: 1em; /* Diastance to subtile field */
+  margin-top: 15%; /* Distance between logo and title */
+  margin-bottom: 1%; /* Diastance to subtile field */
 }
 
 /* Subtitle field*/
 .title-slide .subtitle h2 {
   color: white;
   font-size: 2em;
-  text-align: left;
+  text-align: left; /* Optional: center */
   font-weight: 400;
-  margin-top: 1em; /* Distance between field lines */
-  margin-bottom: 9em;/* Diastance to date field */
+  margin-top: 1%; /* Distance between field lines */
+  margin-bottom: 1%;/* Diastance to author field */
 }
 
 /* Author field: Author font settings */
 .title-slide .author h3 {
   color: white;
   font-size: 2.2em;
-  text-align: left;
+  text-align: left; /* Optional: center */
   font-weight: 400;
-  margin-top: 0.8em; /* Distance between field lines */
-  margin-bottom: 1em;/* Diastance to date field */
+  margin-top: 4%; /* Distance between field lines */
+  margin-bottom: 3%;/* Diastance to date field */
 }
 
 /* Institute field: Affiliation font settings */
 .title-slide .institute h3 {
   color: white;
   font-size: 1.6em;
-  text-align: left;
+  text-align: left; /* Optional: center */
   font-weight: 400;
-  margin-top: 1em; /* Distance between field lines */
-  margin-bottom: 5em;/* Diastance to date field */
+  margin-top: 3%; /* Distance between field lines */
+  margin-bottom: 10%;/* Diastance to date field */
 }
 
 /* Date field: Location and date font settings */
@@ -159,25 +133,25 @@ ol > li:before {
   font-weight: 400;
   margin: 0px; /* Marign around each line */
   line-height: 1.5; /* Line spacing  */
+  margin-bottom: 1%;
 }
 
 /* Hide slide count from title slide */
 .title-slide .remark-slide-number {
-  text-shadow: none;
-  color: #2C95D2;
+  opacity: 0%;
 }
 
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-/*   Final slide settings   */
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*  Closing slide settings  */
 
 .title-slide-final {
   background-color: #2C95D2; /* WIC blue */
   padding-left: 100px;
-  background-size: 75px;
+  
   text-shadow: None;
   text-align: left;
   background-image: url(https://raw.githubusercontent.com/olayabucaro/WICslides/master/libs/figures/logo_head_white.png);
+  background-position: 2% 97%; /* Postion of bottom WIC head */
+  background-size: 50px;
 }
 
 .title-slide-final h1 {
@@ -188,36 +162,31 @@ ol > li:before {
 
 /* Bullet point style */
 .title-slide-final ul {
-        list-style: none; /* Remove default bullets */ 
-            font-size: 2em;
-            color: white;
-    }
-.title-slide-final ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-        color: white; /* WIC blue */
-        font-weight: bold; /* If you want it to be bold */
-        display: inline-block; /* Needed to add space between the bullet and the text */
-        width: 0.7em; /* Also needed for space (tweak if needed) */
-        margin-left: -1em; /* Also needed for space (tweak if needed) */
+    color: white; /* Text */
+}
+.title-slide-final ul li::marker {
+    color: white;
 }
 
 /* Footnote settings */
 .title-slide-final .footnote {
         position: absolute;
-        bottom: 1em;
-        padding-left: 58%;
-        font-size: 95%;
+        bottom: 0.1em;
+        padding-left: 60%; /* 45% for 4:3 ratio */
+        font-size: 90%;
         text-align: right;
-    }
-    
+}
+
 .title-slide-final p {
     color: white;
-    }
+}
 
-/*~~~~~~~~~~~*/
-/* Additions */
-/*~~~~~~~~~~~*/
+/* Hide slide count from final slide */
+.title-slide-final .remark-slide-number {
+    opacity: 0%;
+}
 
+/* Other settings */
 
 /* blockquote */
 .blockquote {
@@ -241,11 +210,13 @@ ol > li:before {
   padding: 4px;
 }
 
+/* Color of code output frame, for style github */
 .hljs-github .hljs {
     background: #EBF6F9;
 }
+/* Color of code output highlighted numbers, for style github */
 .hljs-github .hljs-number {
-    color: #2C95D2;
+    color: #2C95D2; /* WIC blue */
 }
 
 /* Important code slightly red */
@@ -294,11 +265,6 @@ ol > li:before {
 
 img, video, iframe {
   max-width: 100%;
-}
-
-blockquote {
-  border-left: solid 5px lightgray;
-  padding-left: 1em;
 }
 
 /* adjust table horizontal spacing */
