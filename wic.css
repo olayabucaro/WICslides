@@ -169,6 +169,15 @@ ol li::marker {
     color: white;
 }
 
+.title-slide-final ol {
+color: white; /* Text */
+}
+
+/* Numbered list style */
+.title-slide-final ol li::marker {
+  color: white;
+}
+
 /* Footnote settings */
 .title-slide-final .footnote {
         position: absolute;

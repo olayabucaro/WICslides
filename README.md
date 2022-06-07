@@ -19,9 +19,16 @@ remotes::install_github('yihui/xaringan')
 Clone this repo and edit the index.Rmd file.
 Additional configurations can be done in the wic.css file.
 
+Note that the Markdown used to create slides with this package is different and more limited that Pandoc's Markdown.
+
 ## Documentation
 
 Xaringan documentation [here](https://github.com/yihui/xaringan/wiki)
 
 Remark.js documentation [here](https://github.com/gnab/remark/wiki)
 
+## Issues
+
+Please report any errors encountered by opening a issue in this repo or by email.
+
+Feel also free to request additional features or make a pull request if you have something to contribute.
