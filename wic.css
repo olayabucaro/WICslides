@@ -178,6 +178,11 @@ color: white; /* Text */
   color: white;
 }
 
+/* Link color final slide */
+.title-slide-final a {
+  color: white;
+}
+
 /* Footnote settings */
 .title-slide-final .footnote {
         position: absolute;
