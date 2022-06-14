@@ -16,7 +16,7 @@ Install the R package xaringan from CRAN or the latest version using {remotes}.
 remotes::install_github('yihui/xaringan')
 ```
 
-From version 0.25 the wic template is avalible in the xarigan package.
+From version 0.25 the wic template is avalible in the xaringan package.
 Add this to the start of the presentation file to use it without needing to clone this repo.
 ```
 output:
