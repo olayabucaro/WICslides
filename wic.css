@@ -10,7 +10,7 @@ Source: https://github.com/olayabucaro/WICslides
 /* Add padding to all slides for 16:9 aspect ratio and WIC head in left corner */
 .remark-slide-content {
   padding-left: 3%;  /* edit this for 4:3 aspect ratio */
-  background-image: url(https://github.com/olayabucaro/WICslides/raw/master/libs/figures/WIChead.png);
+  background-image: url(https://github.com/olayabucaro/WICslides/raw/main/libs/figures/WIChead.png);
   background-position: 3% 97%; /* Postion of bottom WIC head */
   background-size: 50px; /* Size of bottom WIC head */
   font-size: 16px; /* Base font size, default in most browsers */
@@ -80,7 +80,7 @@ ol li::marker {
 
 /* Title slide logo and background color */
 .title-slide {
-  background-image: url(https://github.com/olayabucaro/WICslides/raw/master/libs/figures/WIClogo.png);
+  background-image: url(https://github.com/olayabucaro/WICslides/raw/main/libs/figures/WIClogo.png);
   background-position: 4% 6%; /* Possition of WIC logo */
   background-size: 300px; /* Size of WIC logo */
   background-color: #2C95D2; /* WIC blue */
@@ -150,7 +150,7 @@ ol li::marker {
   padding-left: 3%;
   text-shadow: None;
   text-align: left;
-  background-image: url(https://raw.githubusercontent.com/olayabucaro/WICslides/master/libs/figures/logo_head_white.png);
+  background-image: url(https://raw.githubusercontent.com/olayabucaro/WICslides/main/libs/figures/logo_head_white.png);
   background-position: 3% 97%; /* Postion of bottom WIC head */
   background-size: 50px;
 }
