@@ -78,9 +78,19 @@ ol li::marker {
 
 /* Title slide settings */
 
-/* Title slide logo and background color */
+/* Title slide two logos and background color - remove .title-slide entry below to have 2 logos on title slide */
 .title-slide {
-  background-image: url(https://github.com/olayabucaro/WICslides/raw/main/libs/figures/WIClogo.png);
+  background-image: url(https://raw.githubusercontent.com/olayabucaro/WICslides/af9d6f5298701045f25e239d69f45aa27c62a928/libs/figures/WIClogo.png), url(https://raw.githubusercontent.com/olayabucaro/WICslides/af9d6f5298701045f25e239d69f45aa27c62a928/libs/figures/logoiiasa.png);
+  background-position: 4% 6%, 40% 6%; /* Possition of WIC logo */
+  background-size: 300px; /* Size of WIC logo */
+  background-color: #2C95D2; /* WIC blue */
+  padding-left: 3%; /* Placement of title text, delete this for 4:3 aspect ratio */
+}
+
+
+/* Title slide one logo and background color */
+.title-slide {
+  background-image: url(https://raw.githubusercontent.com/olayabucaro/WICslides/af9d6f5298701045f25e239d69f45aa27c62a928/libs/figures/WIClogo.png);
   background-position: 4% 6%; /* Possition of WIC logo */
   background-size: 300px; /* Size of WIC logo */
   background-color: #2C95D2; /* WIC blue */
