@@ -4,6 +4,8 @@ Xaringan theme for html presentations using WIC colors
 
 ![wic](https://raw.githubusercontent.com/olayabucaro/WICslides/master/libs/figures/Screenshot_WICtemplate.png)
 
+A Quarto WIC slide template is avalible [here]([https://olayabucaro.github.io/WICslides](https://github.com/olayabucaro/WICslidesQuarto))
+
 ## Example
 
 Example presentation [here](https://olayabucaro.github.io/WICslides)
